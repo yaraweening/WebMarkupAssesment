@@ -1,0 +1,7 @@
+student name: Yara Weening
+
+student number: 642287
+
+student class: INF1A
+
+URl student GitHub repository: www.github.com
