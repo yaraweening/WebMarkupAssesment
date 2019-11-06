@@ -1,5 +1,54 @@
-﻿body {
-    margin: 0
+﻿#header {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+#maintext {
+    margin: auto;
+    width: 50%;
+}
+
+#mainfooter {
+    margin: auto;
+    width: 50%;
+    bottom: auto;
+}
+
+#contactfooter {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    flex: 50%;
+    padding: 5px;
+    object-fit: scale-down;
+}
+
+/* Create two equal columns that sits next to each other */
+.row {
+    display: flex;
+}
+
+#tulpen {
+    width: 100%;
+}
+
+#molen {
+    width: 100%;
 }
 
 ul.sidenav {
@@ -13,6 +62,10 @@ ul.sidenav {
     overflow: auto;
 }
 
+    ul.sidenav li:first-child a {
+        width: 25%;
+    }
+
     ul.sidenav li a {
         display: block;
         color: #000;
@@ -22,23 +75,23 @@ ul.sidenav {
         text-decoration: none;
     }
 
-        ul.sidenav li a.active {
-            background-color: #2699FB;
-            color: white;
-        }
-
-            ul.sidenav li a:hover:not(.active) {
+            ul.sidenav li a:hover {
                 background-color: #444444;
                 color: white;
+            }
+
+            ul.sidenav li:first-child a:hover {
+                 background-color: #F5F5F5;
             }
 
 section.content {
     margin-left: 0;
     padding: 1px 16px;
     height: 1000px;
+    border-bottom: 5px solid #000000;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1280px) {
     ul.sidenav {
         width: 100%;
         height: auto;
@@ -55,9 +108,59 @@ section.content {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
+
     ul.sidenav li a {
         text-align: center;
         float: none;
     }
 }
+
+#cookieMessage {
+    z-index: 999;
+    min-height: 20px;
+    padding: 10px 20px;
+    background: #707070;
+    overflow: hidden;
+    position: fixed;
+    color: #FFF;
+    bottom: 0px;
+    right: 10px;
+    left: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+    #cookieMessage:target {
+        display: none;
+    }
+
+    #cookieMessage section {
+        padding: 5px 0 0;
+    }
+
+    #cookieMessage a {
+        color: #ffba55;
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+        #cookieMessage a#cookieButton {
+            display: inline-block;
+            color: #000000;
+            font-size: 1.1em;
+            background: #2699fb;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 2px 20px;
+            float: right;
+            border-radius: 20px;
+        }
+
+            #cookieMessage a#cookieButton:hover {
+                background: #f5f5f5;
+                color: #000;
+            }
+
