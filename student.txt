@@ -4,4 +4,4 @@ student number: 642287
 
 student class: INF1A
 
-URl student GitHub repository: www.github.com
+URl student GitHub repository: https://github.com/yaraweening/WebMarkupAssesment.git
