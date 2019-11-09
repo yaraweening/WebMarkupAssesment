@@ -1,3 +1,4 @@
+/* font style van alle elementen */
 html {
     font-family: Arial, "Berlin Sans FB", Sans-Serif;
 }
@@ -18,7 +19,8 @@ body {
     text-align: center;
 }
 
-#maintext {
+/* Maak content blokken */
+.main {
     margin: auto;
     padding: 8px;
     width: 80%;
@@ -26,7 +28,8 @@ body {
     font-size: 15pt;
 }
 
-#mainfooter {
+/* Footer per section */
+.footer {
     margin: auto;
     width: 80%;
     padding: 5px;
@@ -35,7 +38,8 @@ body {
     text-align: right;
 }
 
-#contactfooter {
+/* Footer onderaan de website */
+#mainfooter {
     position: relative;
     left: 0;
     bottom: 0;
@@ -46,6 +50,7 @@ body {
     text-align: center;
 }
 
+/* Maak kolommen met rijen */
 * {
     box-sizing: border-box;
 }
@@ -62,6 +67,7 @@ body {
         display: block;
     }
 
+/* Maak kolommen van 3 */
 .column {
     flex: 33.3%;
     padding: 5px;
@@ -73,10 +79,12 @@ body {
     max-width: 33.3%;
 }
 
+/* Geef alle afbeeldingen dezelfde grootte */
 .imgsize {
     width: 100%;
 }
 
+/* Menu balk */
 ul.sidenav {
     list-style-type: none;
     margin: 0;
@@ -101,17 +109,14 @@ ul.sidenav {
         font-size: 15pt;
         text-decoration: none;
     }
-
-        ul.sidenav li a.active {
-            background-color: #2699FB;
-            color: white;
-        }
-
+            
+            /* Kleur van niet actieve menu balk elementen */
             ul.sidenav li a:hover:not(.active) {
                 background-color: #444444;
                 color: white;
             }
 
+            /* Kleur van actief menu balk element */
             ul.sidenav li:first-child a:hover:not(.active) {
                  background-color: #F5F5F5;
             }
@@ -121,6 +126,67 @@ section.content {
     padding: 1px 16px;
 }
 
+/* Achtergrond video */
+.BackgroundVidWrapper {
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.BackgroundVid {
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#aside {
+    float: right;
+}
+
+/* Contact formulier */
+#contactform {
+    height: 100%;
+    flex: 1 1 auto;
+    margin: 0 auto;
+    display: block;
+}
+
+    #contactform input {
+        display: block;
+    }
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Contact formulier submit button */
+input[type=submit] {
+    width: 100%;
+    background-color: #707070;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #444444;
+    }
+
+/* Scherm afmetingen voor tablet */
 @media screen and (max-width: 1280px) {
     ul.sidenav {
         width: 100%;
@@ -133,6 +199,7 @@ section.content {
             padding: 15px;
         }
 
+    /* Kolom afmetingen voor tablet */
     .column {
         flex: 50%;
     }
@@ -147,15 +214,17 @@ section.content {
     }
 }
 
+/* Scherm afmetingen voor mobiel */
 @media screen and (max-width: 480px) {
-#maintext {
+.main {
     width: 100%;
 }
 
-#mainfooter {
+.footer {
     width: 100%;
 }
 
+/* Kolom afmetingen voor mobiel */
 .column {
     flex: 100%;
 }
@@ -171,6 +240,7 @@ section.content {
     }
 }
 
+/* Cookie statement */
 #cookieMessage {
     z-index: 999;
     min-height: 20px;
@@ -214,11 +284,13 @@ section.content {
             border-radius: 20px;
         }
 
+            /* Kleur van actief cookie button */
             #cookieMessage label#cookieButton:hover {
                 background: #F5F5F5;
                 color: #000;
             }
 
+/* Laat cookie statement verdwijnen */
 input[type=checkbox] {
    position: absolute;
    top: -9999px;

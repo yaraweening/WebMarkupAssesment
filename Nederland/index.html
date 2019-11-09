@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
@@ -10,12 +9,14 @@
     <title>Web Markup assesment</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<body>   
+<body>
+    <!--Titel-->
     <section id="header">
         <h1 id="title">Nederland</h1>
         <h2 id="payoff">Waarom een toerist Nederland moet bezoeken</h2>
     </section>
 
+    <!--Menubalk-->
     <nav>
         <ul class="sidenav">
             <li>
@@ -39,10 +40,11 @@
         </ul>
     </nav>
 
+    <!--Home pagina-->
     <section class="content">
-        <article id="maintext">
+        <article class="main">
             <h2>
-                <a name="maincontent">Example</a>
+                <a id="maincontent">Home</a>
             </h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -51,6 +53,8 @@
                 Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
                 Nam eget dui.
             </p>
+
+            <!--Laat een rij met 2 kolommen zien-->
             <section class="row">
                 <section class="column">
                     <img src="img/tulpen.png" alt="tulpen" class="imgsize">
@@ -60,24 +64,44 @@
                 </section>
             </section>
         </article>
-        <footer id="mainfooter">Einde</footer>
+        <footer class="footer">Einde</footer>
     </section>
 
+    <!--About pagina-->
     <section class="content">
-        <article id="maintext">
+        <article class="main">
             <h2>
-                <a name="secondarycontent">Example</a>
+                <a id="secondarycontent">About</a>
             </h2>
-            <p>Dit is een test met veel tekst voor de homepagina en andere pagina's om te kijken of het goed responsive is</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                Nam eget dui.
+            </p>
+
+            <!--Laat een rij met 2 kolommen zien-->
+            <section class="row">
+                <section class="column">
+                    <img src="img/tulpen.png" alt="tulpen" class="imgsize">
+                </section>
+                <section class="column">
+                    <img src="img/molen.png" alt="molen" class="imgsize">
+                </section>
+            </section>
         </article>
-        <footer id="mainfooter">Einde</footer>
+        <footer class="footer">Einde</footer>
     </section>
 
+    <!--Sport pagina-->
     <section class="content">
-        <article id="maintext">
+        <article class="main">
             <h2>
-                <a name="sportcontent">Sport</a>
+                <a id="sportcontent">Sport</a>
             </h2>
+
+            <!--Laat een rij met 10 kolommen per 3 onder elkaar zien-->
             <section class="row">
                 <section class="column-grid">
                     <img src="img/brazilian-jiu-jitsu.png" alt="brazilian-jiu-jitsu" class="imgsize">
@@ -183,42 +207,69 @@
                 </section>
             </section>
         </article>
-        <footer id="mainfooter">Einde</footer>
+        <footer class="footer">Einde</footer>
     </section>
 
+    <!--Referral pagina-->
     <section class="content">
-        <article id="maintext">
+        <article class="main">
             <h2>
-                <a name="referralcontent">Example</a>
+                <a id="referralcontent">Referral</a>
             </h2>
-            <video width="320" height="240" controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
+
+            <!--Laat een achtergrond video zien met tekst eronder-->
+            <section class="BackgroundVidWrapper">
+                <video loop muted autoplay class="BackgroundVid">
+                    <source src="video/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                    Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                    Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                    Nam eget dui.
+                </p>
+                <aside id="aside">
+                    <a href="https://www.taekwon.nl/brazilian-jiu-jitsu/">BRAZILIAN JIU JITSU</a>
+                </aside>
+            </section>
         </article>
-        <footer id="mainfooter">Einde</footer>
+        <footer class="footer">Einde</footer>
     </section>
 
+    <!--Contact pagina-->
     <section class="content">
-        <article id="maintext">
+        <article class="main">
             <h2>
-                <a name="contactcontent">Example</a>
+                <a id="contactcontent">Contact</a>
             </h2>
-            <form>
-                <fieldset>
-                    <legend>Personalia:</legend>
-                    Name: <input type="text"><br>
-                    Email: <input type="text"><br>
-                    Date of birth: <input type="text">
-                </fieldset>
-            </form>
+
+            <!--Contact formulier-->
+            <section id="contactform">
+                <form method="post" action="http://witan.nl/inholland/testform.php" onSubmit="alert('Bedankt voor het invullen!')">
+                    <fieldset>
+                        <legend>Laat een bericht achter:</legend>
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="name" />
+                        <label for="mail">Email:</label>
+                        <input type="text" id="mail" name="email" />
+                        <label for="fmessage">Message:</label>
+                        <input type="text" id="fmessage" name="message" />
+                    </fieldset>
+
+                    <!--Contact formulier button-->
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
         </article>
-        <footer id="mainfooter">Einde</footer>
+        <footer class="footer">Einde</footer>
     </section>
 
-    <footer id="contactfooter">&copy; Yara Weening</footer>
+    <!--Algemene footer-->
+    <footer id="mainfooter">&copy; Yara Weening</footer>
 
+    <!--Cookie statement-->
     <input type="checkbox" id="hide">
     <section id="cookieMessage">
         <label id="cookieButton" for="hide">Accepteer</label>
