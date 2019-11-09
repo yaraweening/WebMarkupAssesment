@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
@@ -9,11 +10,12 @@
     <title>Web Markup assesment</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<body>
+<body>   
     <section id="header">
-        <h1>Nederland</h1>
-        <h2>Waarom zou een toerist Nederland moeten bezoeken?</h2>
+        <h1 id="title">Nederland</h1>
+        <h2 id="payoff">Waarom een toerist Nederland moet bezoeken</h2>
     </section>
+
     <nav>
         <ul class="sidenav">
             <li>
@@ -51,10 +53,10 @@
             </p>
             <section class="row">
                 <section class="column">
-                    <img src="img/tulpen.png" alt="tulpen" id="tulpen">
+                    <img src="img/tulpen.png" alt="tulpen" class="imgsize">
                 </section>
                 <section class="column">
-                    <img src="img/molen.png" alt="molen" id="molen">
+                    <img src="img/molen.png" alt="molen" class="imgsize">
                 </section>
             </section>
         </article>
@@ -62,38 +64,165 @@
     </section>
 
     <section class="content">
-        <h2>
-            <a name="secondarycontent">Example</a>
-        </h2>
-        <p>Dit is een test met veel tekst voor de homepagina en andere pagina's om te kijken of het goed responsive is</p>
+        <article id="maintext">
+            <h2>
+                <a name="secondarycontent">Example</a>
+            </h2>
+            <p>Dit is een test met veel tekst voor de homepagina en andere pagina's om te kijken of het goed responsive is</p>
+        </article>
+        <footer id="mainfooter">Einde</footer>
     </section>
 
     <section class="content">
-        <h2>
-            <a name="sportcontent">Example</a>
-        </h2>
-        <p>Dit is een test met veel tekst voor de homepagina en andere pagina's om te kijken of het goed responsive is</p>
+        <article id="maintext">
+            <h2>
+                <a name="sportcontent">Sport</a>
+            </h2>
+            <section class="row">
+                <section class="column-grid">
+                    <img src="img/brazilian-jiu-jitsu.png" alt="brazilian-jiu-jitsu" class="imgsize">
+                    <h4>
+                        <a href="https://www.taekwon.nl/brazilian-jiu-jitsu/">BRAZILIAN JIU JITSU</a>
+                    </h4>
+                    <p>
+                        Onder leiding van EGJJF trainer M. van der Meer, is ons programma speciaal ontwikkeld voor jeugd (14jaar +) en volwassenen.
+                        Door de laagdrempelige insteek van de training is het Brazilian Jiu Jitsu direct effectief toepasbaar en speelt in op de behoefte en belevingswereld van
+                        de jeugd en volwassenen door de persoonlijke aanpak.
+                    </p>
+                </section>
+                <section class="column-grid">
+                    <img src="img/volleybal.png" alt="volleybal" class="imgsize">
+                    <h4>
+                        <a href="http://www.vv-yum.nl/">VOLLEYBAL VERENIGING YUM</a>
+                    </h4>
+                    <p>
+                        Volleybalvereniging YUM is de enige volleybalvereniging in Hoogvliet tot aan Rotterdam-Zuid die in competitieverband bij de NEVOBO (Nederlandse Volleybal Bond) uitkomt.
+                        Naast heren en damesteams in de competitie, heeft YUM een aantal jeugdteams in ded iverse leeftijdscategorieën.
+                    </p>
+                </section>
+                <section class="column-grid">
+                    <img src="img/zwemmen.png" alt="zwemmen" class="imgsize">
+                    <h4>
+                        <a href="http://aquawaard.nl/">ZWEM- EN WATERPOLO VERENIGING AQUAWAARD</a>
+                    </h4>
+                    <p>
+                        Zwem & Poloclub AquaWaarD is een vereniging die de mogelijkheden biedt waarbinnen de sporter zich kan ontwikkelen tot het voor hem/haar hoogst mogelijke niveau.
+                        In teamverband train je een aantal keer in de week en zaterdags speel je mee in de spannende competitie!
+                    </p>
+                </section>
+                <section class="column-grid">
+                    <img src="img/hockey.png" alt="hockey" class="imgsize">
+                    <h4>
+                        <a href="https://www.amhc.nl/">ALKMAARSCHE MIXED HOCKEY CLUB</a>
+                    </h4>
+                    <p>
+                        De vereniging heeft om en nabij de 1100 leden en is daarmee de grootste hockeyclub in Noord Holland Noord.
+                        De selectieteams spelen op een hoog niveau, ons Heren 1 en Dames 1 spelen beide in de Eerste Klasse.
+                    </p>
+                </section>
+                <section class="column-grid">
+                    <img src="img/tennis.png" alt="tennis" class="imgsize">
+                    <h4>
+                        <a href="https://www.tcheiloounited.nl/">TC HEILOO UNITED</a>
+                    </h4>
+                    <p>
+                        Het plezier in de tennissport gaat boven alles, gezelligheid staat hoog in het vaandel.
+                        Maar dat gaat heel goed samen met het spelen van competitie, het organiseren van toernooien en het volgen van lessen en vrijspelen om het spelpeil te verbeteren.
+                    </p>
+                </section>
+                <section class="column-grid">
+                    <img src="img/voetbal.png" alt="voetbal" class="imgsize">
+                    <h4>
+                        <a href="https://www.az.nl/">VOETBAL CLUB AZ</a>
+                    </h4>
+                    <p>
+                        Het is een organisatie met uitstraling, een roemrijk verleden met prachtige resultaten, klinkende namen, iconen en een hele krachtige mentaliteit.
+                        De Alkmaarse club heeft menige crisissituaties meegemaakt, maar kwam er altijd weer bovenop.
+                    </p>
+                </section>
+                <section class="column-grid">
+                    <img src="img/handbal.png" alt="handbal" class="imgsize">
+                    <h4>
+                        <a href="http://www.handbalvenlo.nl/">CABOOTER GROUP-HANDBAL VENLO</a>
+                    </h4>
+                    <p>
+                        De club is zowel op het gebied van breedtesport als topsport succesvol.
+                        Binnen deze afdelingen handballen tientallen teams wekelijks wedstrijden in diverse door het Nederlands Handbalverbond georganiseerde competities.
+                    </p>
+                </section>
+                <section class="column-grid">
+                    <img src="img/atletiek.png" alt="atletiek" class="imgsize">
+                    <h4>
+                        <a href="https://avnea.nl/">ATLETIEKVERENIGING NEA VOLHARDING</a>
+                    </h4>
+                    <p>
+                        NEA Volharding is dé atletiekvereniging voor Purmerend en omstreken, waar zowel aan baanatletiek als aan loopsport wordt gedaan.
+                        Bij ons kun je trainen voor een topprestatie of gewoon lekker bewegen om je fit en gezond te voelen.
+                    </p>
+                </section>
+                <section class="column-grid">
+                    <img src="img/paardrijden.png" alt="paardrijden" class="imgsize">
+                    <h4>
+                        <a href="https://www.manegegroot.nl/">MANEGE GROOT</a>
+                    </h4>
+                    <p>
+                        Manege Groot is in vele takken van de paaardensport actief.
+                        Er zijn paardrijlessen in dressuur en springen, voor zowel beginners als gevorderde ruiters en amazones, maar ook voor mooie buitenritten naar bos,
+                        strand en duinen, pensionstalling, carrouselrijden en voltige kun je terecht bij Manege Groot.
+                    </p>
+                </section>
+                <section class="column-grid">
+                    <img src="img/dansen.png" alt="dansen" class="imgsize">
+                    <h4>
+                        <a href="https://www.clubfiera.com/">DANS CLUB FIERA</a>
+                    </h4>
+                    <p>
+                        Wij geloven dat je Bachata pas echt gaat dansen, voelen en beleven als je de muziek gaat toepassen in je dans en de achtergronden kent van deze heerlijke muziek.
+                        We leren je graag echt goed dansen, met veel oog voor de kleine details in de uitvoering.
+                    </p>
+                </section>
+            </section>
+        </article>
+        <footer id="mainfooter">Einde</footer>
     </section>
 
     <section class="content">
-        <h2>
-            <a name="referralcontent">Example</a>
-        </h2>
-        <p>Dit is een test met veel tekst voor de homepagina en andere pagina's om te kijken of het goed responsive is</p>
+        <article id="maintext">
+            <h2>
+                <a name="referralcontent">Example</a>
+            </h2>
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+        <footer id="mainfooter">Einde</footer>
     </section>
 
     <section class="content">
-        <h2>
-            <a name="contactcontent">Example</a>
-        </h2>
-        <p>Dit is een test met veel tekst voor de homepagina en andere pagina's om te kijken of het goed responsive is</p>
+        <article id="maintext">
+            <h2>
+                <a name="contactcontent">Example</a>
+            </h2>
+            <form>
+                <fieldset>
+                    <legend>Personalia:</legend>
+                    Name: <input type="text"><br>
+                    Email: <input type="text"><br>
+                    Date of birth: <input type="text">
+                </fieldset>
+            </form>
+        </article>
+        <footer id="mainfooter">Einde</footer>
     </section>
+
     <footer id="contactfooter">&copy; Yara Weening</footer>
 
+    <input type="checkbox" id="hide">
     <section id="cookieMessage">
-        <a id="cookieButton" href="#cookieMessage">Accepteer</a>
+        <label id="cookieButton" for="hide">Accepteer</label>
         <section>Deze website maakt gebruik van cookies.</section>
     </section>
-
 </body>
 </html>
