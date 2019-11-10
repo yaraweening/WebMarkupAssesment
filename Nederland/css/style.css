@@ -124,7 +124,7 @@ ul.sidenav {
             /* Kleur van niet actieve menu balk elementen */
             ul.sidenav li a:hover:not(.active) {
                 background-color: #444444;
-                color: #000000;
+                color: #FFFFFF;
             }
 
             /* Kleur van actief menu balk element */
@@ -185,6 +185,7 @@ section.content {
 
     #contactform textarea {
         display: block;
+        font-family: Arial, "Berlin Sans FB", Sans-Serif, 'Times New Roman'; 
     }
 
     /* Contact formulier submit button */
