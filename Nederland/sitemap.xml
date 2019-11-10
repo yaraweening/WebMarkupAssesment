@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://taekwon.eu/642287</loc>
+		<loc>https://taekwon.eu/642287/</loc>
+		<lastmod>2019-11-07T19:55:25+02:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://taekwon.eu/642287/index.html</loc>
 		<lastmod>2019-11-07T19:55:25+02:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
